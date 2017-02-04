@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sonu.hackathon.MainActivity">
+
+    <include
+        layout="@layout/search_hospital"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/nearby_hospital_id"
+        android:layout_toEndOf="@+id/nearby_hospital_id"
+        android:id="@+id/search_hospital_id" />
+
+    <include
+        layout="@layout/bookmark_hospital"
+        android:layout_width="169dp"
+        android:layout_height="65dp"
+        android:id="@+id/bookmarked_hospital_id"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        layout="@layout/nearby_button"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:id="@+id/nearby_hospital_id"
+        android:layout_above="@+id/bookmarked_hospital_id"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:src="@drawable/med_easy"
+        android:id="@+id/imageView"
+        android:paddingTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/med_build"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+</RelativeLayout>
